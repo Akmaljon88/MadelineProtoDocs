@@ -19,6 +19,6 @@ Other
 
 ### Example:
 
-```php
+```
 $inputReportReasonOther = ['_' => 'inputReportReasonOther'];
 ```  

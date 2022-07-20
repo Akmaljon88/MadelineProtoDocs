@@ -24,6 +24,6 @@ A document with stickers attached
 
 ### Example:
 
-```php
+```
 $inputStickeredMediaDocument = ['_' => 'inputStickeredMediaDocument', 'id' => InputDocument];
 ```  

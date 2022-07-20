@@ -26,6 +26,6 @@ Represents an issue with the front side of a document. The error is considered r
 
 ### Example:
 
-```php
+```
 $secureValueErrorFrontSide = ['_' => 'secureValueErrorFrontSide', 'type' => SecureValueType, 'file_hash' => 'bytes', 'text' => 'string'];
 ```  

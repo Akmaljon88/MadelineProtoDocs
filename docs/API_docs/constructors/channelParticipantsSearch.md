@@ -24,6 +24,6 @@ Query participants by name
 
 ### Example:
 
-```php
+```
 $channelParticipantsSearch = ['_' => 'channelParticipantsSearch', 'q' => 'string'];
 ```  

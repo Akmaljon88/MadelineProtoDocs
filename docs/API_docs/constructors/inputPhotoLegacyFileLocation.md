@@ -29,6 +29,6 @@ DEPRECATED legacy photo file location
 
 ### Example:
 
-```php
+```
 $inputPhotoLegacyFileLocation = ['_' => 'inputPhotoLegacyFileLocation', 'id' => long, 'access_hash' => long, 'file_reference' => 'bytes', 'volume_id' => long, 'local_id' => int, 'secret' => long];
 ```  

@@ -19,6 +19,6 @@ Empty constructor
 
 ### Example:
 
-```php
+```
 $inputStickerSetEmpty = ['_' => 'inputStickerSetEmpty'];
 ```  

@@ -19,6 +19,6 @@ Bank statement
 
 ### Example:
 
-```php
+```
 $secureValueTypeBankStatement = ['_' => 'secureValueTypeBankStatement'];
 ```  

@@ -19,6 +19,6 @@ Internal [passport](https://core.telegram.org/passport)
 
 ### Example:
 
-```php
+```
 $secureValueTypeInternalPassport = ['_' => 'secureValueTypeInternalPassport'];
 ```  

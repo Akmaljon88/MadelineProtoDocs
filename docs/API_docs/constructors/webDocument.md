@@ -28,6 +28,6 @@ Remote document
 
 ### Example:
 
-```php
+```
 $webDocument = ['_' => 'webDocument', 'url' => 'string', 'access_hash' => long, 'size' => int, 'mime_type' => 'string', 'attributes' => [DocumentAttribute, DocumentAttribute]];
 ```  

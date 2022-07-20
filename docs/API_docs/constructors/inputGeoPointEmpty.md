@@ -19,6 +19,6 @@ Empty GeoPoint constructor.
 
 ### Example:
 
-```php
+```
 $inputGeoPointEmpty = ['_' => 'inputGeoPointEmpty'];
 ```  

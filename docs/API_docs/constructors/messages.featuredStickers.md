@@ -28,6 +28,6 @@ Featured stickersets
 
 ### Example:
 
-```php
+```
 $messages_featuredStickers = ['_' => 'messages.featuredStickers', 'hash' => long, 'count' => int, 'sets' => [StickerSetCovered, StickerSetCovered], 'unread' => [long, long]];
 ```  

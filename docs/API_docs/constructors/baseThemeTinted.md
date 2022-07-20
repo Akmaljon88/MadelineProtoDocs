@@ -19,6 +19,6 @@ Tinted theme
 
 ### Example:
 
-```php
+```
 $baseThemeTinted = ['_' => 'baseThemeTinted'];
 ```  

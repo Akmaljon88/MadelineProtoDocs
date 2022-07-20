@@ -26,6 +26,6 @@ Peer geolocated nearby
 
 ### Example:
 
-```php
+```
 $peerLocated = ['_' => 'peerLocated', 'peer' => Peer, 'expires' => int, 'distance' => int];
 ```  

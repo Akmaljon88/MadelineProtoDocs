@@ -24,6 +24,6 @@ Theme by theme ID
 
 ### Example:
 
-```php
+```
 $inputThemeSlug = ['_' => 'inputThemeSlug', 'slug' => 'string'];
 ```  

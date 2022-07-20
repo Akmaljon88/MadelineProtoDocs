@@ -24,6 +24,6 @@ Group call settings were changed
 
 ### Example:
 
-```php
+```
 $channelAdminLogEventActionToggleGroupCallSetting = ['_' => 'channelAdminLogEventActionToggleGroupCallSetting', 'join_muted' => Bool];
 ```  

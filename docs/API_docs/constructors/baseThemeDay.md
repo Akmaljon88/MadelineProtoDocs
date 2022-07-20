@@ -19,6 +19,6 @@ Day theme
 
 ### Example:
 
-```php
+```
 $baseThemeDay = ['_' => 'baseThemeDay'];
 ```  

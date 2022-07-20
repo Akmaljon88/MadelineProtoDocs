@@ -26,6 +26,6 @@ A VoIP phone call
 
 ### Example:
 
-```php
+```
 $phone_phoneCall = ['_' => 'phone.phoneCall', 'phone_call' => PhoneCall, 'users' => [User, User]];
 ```  

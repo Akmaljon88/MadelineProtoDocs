@@ -26,6 +26,6 @@ A collapsible details block
 
 ### Example:
 
-```php
+```
 $pageBlockDetails = ['_' => 'pageBlockDetails', 'open' => Bool, 'blocks' => [PageBlock, PageBlock], 'title' => RichText];
 ```  

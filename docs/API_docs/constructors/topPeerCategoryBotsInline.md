@@ -19,6 +19,6 @@ Most used inline bots
 
 ### Example:
 
-```php
+```
 $topPeerCategoryBotsInline = ['_' => 'topPeerCategoryBotsInline'];
 ```  

@@ -24,6 +24,6 @@ Hide sent bot keyboard
 
 ### Example:
 
-```php
+```
 $replyKeyboardHide = ['_' => 'replyKeyboardHide', 'selective' => Bool];
 ```  

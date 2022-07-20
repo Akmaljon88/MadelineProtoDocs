@@ -19,6 +19,6 @@ User is currently speaking in the group call
 
 ### Example:
 
-```php
+```
 $speakingInGroupCallAction = ['_' => 'speakingInGroupCallAction'];
 ```  

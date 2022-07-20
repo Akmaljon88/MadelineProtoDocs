@@ -14,8 +14,6 @@ Created by <a href="https://daniil.it" target="_blank" rel="noopener">Daniil Gen
 
 Do join the official channel, [@MadelineProto](https://t.me/MadelineProto) and the [support groups](https://t.me/pwrtelegramgroup)!
 
-[Now with Telegram TON blockchain integration](https://github.com/danog/MadelineProto/blob/master/ton/README.md)!
-
 <a href="https://telegram.org/apps" target="_blank" rel="noopener">Approved by Telegram!</a>
 
 ## What's this?
@@ -44,21 +42,26 @@ $me = $MadelineProto->getSelf();
 $MadelineProto->logger($me);
 
 if (!$me['bot']) {
-    $MadelineProto->messages->sendMessage(['peer' => '@danogentili', 'message' => "Hi!\nThanks for creating MadelineProto! <3"]);
-    $MadelineProto->channels->joinChannel(['channel' => '@MadelineProto']);
+    // This example uses PHP 7.1+ syntax with arrays
+    $MadelineProto->messages->sendMessage(['peer' => '@danogentili', 'message' => "Hi!\nThanks for creating MadelineProto (PHP 7)! <3"]);
+
+    // This example uses PHP 8.0+ syntax with named arguments
+    $MadelineProto->messages->sendMessage(peer: '@danogentili', message: "Hi!\nThanks for creating MadelineProto (PHP 8)! <3");
+
+    $MadelineProto->channels->joinChannel(channel: '@MadelineProto');
 
     try {
-        $MadelineProto->messages->importChatInvite(['hash' => 'https://t.me/joinchat/Bgrajz6K-aJKu0IpGsLpBg']);
+        $MadelineProto->messages->importChatInvite(hash: 'https://t.me/joinchat/Bgrajz6K-aJKu0IpGsLpBg');
     } catch (\danog\MadelineProto\RPCErrorException $e) {
         $MadelineProto->logger($e);
     }
 
-    $MadelineProto->messages->sendMessage(['peer' => 'https://t.me/joinchat/Bgrajz6K-aJKu0IpGsLpBg', 'message' => 'Testing MadelineProto!']);
+    $MadelineProto->messages->sendMessage(peer: 'https://t.me/joinchat/Bgrajz6K-aJKu0IpGsLpBg', message: 'Testing MadelineProto!');
 }
 $MadelineProto->echo('OK, done!');
 ```
 
-[Try this code now!](https://try.madelineproto.xyz) or run this code in a browser or in a console. 
+Try running this code in a browser or in a console!  
 
 
 Tip: if you receive an error (or nothing), [send us](https://t.me/pwrtelegramgroup) the error message and the `MadelineProto.log` file that was created in the same directory (if running from a browser).  
@@ -194,7 +197,7 @@ You can find examples for nearly every MadelineProto function in
         * [Async sleep](https://docs.madelineproto.xyz/docs/ASYNC.html#async-sleep-does-not-block-the-main-thread)
         * [Async readline](https://docs.madelineproto.xyz/docs/ASYNC.html#async-readline-does-not-block-the-main-thread)
         * [Async echo](https://docs.madelineproto.xyz/docs/ASYNC.html#async-echo-does-not-block-the-main-thread)
-        * [MadelineProto artax HTTP client](https://docs.madelineproto.xyz/docs/ASYNC.html#madelineproto-artax-http-client)
+        * [MadelineProto HTTP client](https://docs.madelineproto.xyz/docs/ASYNC.html#madelineproto-http-client)
         * [Async forking](https://docs.madelineproto.xyz/docs/ASYNC.html#async-forking-does-green-thread-forking)
         * [Async flock](https://docs.madelineproto.xyz/docs/ASYNC.html#async-flock)
         * [Combining async operations](https://docs.madelineproto.xyz/docs/ASYNC.html#combining-async-operations)
@@ -206,6 +209,16 @@ You can find examples for nearly every MadelineProto function in
         * [GenericLoop](https://docs.madelineproto.xyz/docs/ASYNC.html#genericloop)
         * [PeriodicLoop](https://docs.madelineproto.xyz/docs/ASYNC.html#periodicloop)
 * [Using methods](https://docs.madelineproto.xyz/docs/USING_METHODS.html)
+  * [Named arguments (PHP 8+)](https://docs.madelineproto.xyz/docs/USING_METHODS.html#named-arguments)
+  * [Peers](https://docs.madelineproto.xyz/docs/USING_METHODS.html#peers)
+  * [Files](https://docs.madelineproto.xyz/docs/FILES.html)
+  * [Secret chats](https://docs.madelineproto.xyz/docs/USING_METHODS.html#secret-chats)
+  * [Entities (Markdown & HTML)](https://docs.madelineproto.xyz/docs/USING_METHODS.html#entities)
+  * [reply_markup (keyboards & inline keyboards)](https://docs.madelineproto.xyz/docs/USING_METHODS.html#reply_markup)
+  * [bot API objects](https://docs.madelineproto.xyz/docs/USING_METHODS.html#bot-api-objects)
+  * [No result](https://docs.madelineproto.xyz/docs/USING_METHODS.html#no-result)
+  * [Queues](https://docs.madelineproto.xyz/docs/USING_METHODS.html#queues)
+  * [Multiple method calls](https://docs.madelineproto.xyz/docs/USING_METHODS.html#multiple-method-calls)
   * [FULL API Documentation with descriptions](https://docs.madelineproto.xyz/API_docs/methods/)
     * [Logout](https://docs.madelineproto.xyz/logout.html)
     * [Login](https://docs.madelineproto.xyz/docs/LOGIN.html)
@@ -603,15 +616,6 @@ You can find examples for nearly every MadelineProto function in
     * <a href="https://docs.madelineproto.xyz/API_docs/methods/account.updateDeviceLocked.html" name="account.updateDeviceLocked">When client-side passcode lock feature is enabled, will not show message texts in incoming PUSH notifications: account.updateDeviceLocked</a>
     * <a href="https://docs.madelineproto.xyz/API_docs/methods/account.getContactSignUpNotification.html" name="account.getContactSignUpNotification">Whether the user will receive notifications when contacts sign up: account.getContactSignUpNotification</a>
     * <a href="https://docs.madelineproto.xyz/API_docs/methods/messages.unpinAllMessages.html" name="messages.unpinAllMessages">Unpin all pinned messages: messages.unpinAllMessages</a>
-  * [Peers](https://docs.madelineproto.xyz/docs/USING_METHODS.html#peers)
-  * [Files](https://docs.madelineproto.xyz/docs/FILES.html)
-  * [Secret chats](https://docs.madelineproto.xyz/docs/USING_METHODS.html#secret-chats)
-  * [Entities (Markdown & HTML)](https://docs.madelineproto.xyz/docs/USING_METHODS.html#entities)
-  * [reply_markup (keyboards & inline keyboards)](https://docs.madelineproto.xyz/docs/USING_METHODS.html#reply_markup)
-  * [bot API objects](https://docs.madelineproto.xyz/docs/USING_METHODS.html#bot-api-objects)
-  * [No result](https://docs.madelineproto.xyz/docs/USING_METHODS.html#no-result)
-  * [Queues](https://docs.madelineproto.xyz/docs/USING_METHODS.html#queues)
-  * [Multiple method calls](https://docs.madelineproto.xyz/docs/USING_METHODS.html#multiple-method-calls)
 * [Contributing](https://docs.madelineproto.xyz/docs/CONTRIB.html)
   * [Translation](https://docs.madelineproto.xyz/docs/CONTRIB.html#translation)
   * [Contribution guide](https://docs.madelineproto.xyz/docs/CONTRIB.html#contribution-guide)

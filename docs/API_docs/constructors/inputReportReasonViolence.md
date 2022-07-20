@@ -19,6 +19,6 @@ Report for violence
 
 ### Example:
 
-```php
+```
 $inputReportReasonViolence = ['_' => 'inputReportReasonViolence'];
 ```  

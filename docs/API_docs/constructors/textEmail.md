@@ -25,6 +25,6 @@ Rich text email link
 
 ### Example:
 
-```php
+```
 $textEmail = ['_' => 'textEmail', 'text' => RichText, 'email' => 'string'];
 ```  

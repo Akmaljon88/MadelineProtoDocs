@@ -24,6 +24,6 @@ Emoji language
 
 ### Example:
 
-```php
+```
 $emojiLanguage = ['_' => 'emojiLanguage', 'lang_code' => 'string'];
 ```  

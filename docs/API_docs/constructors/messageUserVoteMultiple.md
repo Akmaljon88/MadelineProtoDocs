@@ -26,6 +26,6 @@ How a user voted in a multiple-choice poll
 
 ### Example:
 
-```php
+```
 $messageUserVoteMultiple = ['_' => 'messageUserVoteMultiple', 'user_id' => long, 'options' => ['bytes', 'bytes'], 'date' => int];
 ```  

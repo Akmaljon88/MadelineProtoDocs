@@ -24,6 +24,6 @@ Subtitle
 
 ### Example:
 
-```php
+```
 $pageBlockSubtitle = ['_' => 'pageBlockSubtitle', 'text' => RichText];
 ```  

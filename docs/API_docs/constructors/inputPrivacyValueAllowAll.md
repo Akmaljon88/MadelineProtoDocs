@@ -19,6 +19,6 @@ Allow all users
 
 ### Example:
 
-```php
+```
 $inputPrivacyValueAllowAll = ['_' => 'inputPrivacyValueAllowAll'];
 ```  

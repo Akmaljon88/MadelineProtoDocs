@@ -19,6 +19,6 @@ null JSON value
 
 ### Example:
 
-```php
+```
 $jsonNull = ['_' => 'jsonNull'];
 ```  

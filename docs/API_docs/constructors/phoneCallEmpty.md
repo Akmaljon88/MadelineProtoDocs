@@ -24,6 +24,6 @@ Empty constructor
 
 ### Example:
 
-```php
+```
 $phoneCallEmpty = ['_' => 'phoneCallEmpty', 'id' => long];
 ```  

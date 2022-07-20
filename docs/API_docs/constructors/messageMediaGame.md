@@ -24,6 +24,6 @@ Telegram game
 
 ### Example:
 
-```php
+```
 $messageMediaGame = ['_' => 'messageMediaGame', 'game' => Game];
 ```  

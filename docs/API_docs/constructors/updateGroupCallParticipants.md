@@ -26,6 +26,6 @@ The participant list of a certain group call has changed
 
 ### Example:
 
-```php
+```
 $updateGroupCallParticipants = ['_' => 'updateGroupCallParticipants', 'call' => InputGroupCall, 'participants' => [GroupCallParticipant, GroupCallParticipant], 'version' => int];
 ```  

@@ -26,6 +26,6 @@ Represents an issue with a document scan. The error is considered resolved when 
 
 ### Example:
 
-```php
+```
 $secureValueErrorFile = ['_' => 'secureValueErrorFile', 'type' => SecureValueType, 'file_hash' => 'bytes', 'text' => 'string'];
 ```  

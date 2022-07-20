@@ -19,6 +19,6 @@ Report for divulgation of personal details
 
 ### Example:
 
-```php
+```
 $inputReportReasonPersonalDetails = ['_' => 'inputReportReasonPersonalDetails'];
 ```  

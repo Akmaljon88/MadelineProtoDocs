@@ -19,6 +19,6 @@ Online status: last seen recently
 
 ### Example:
 
-```php
+```
 $userStatusRecently = ['_' => 'userStatusRecently'];
 ```  

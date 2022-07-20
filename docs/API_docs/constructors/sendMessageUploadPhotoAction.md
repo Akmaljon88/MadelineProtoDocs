@@ -24,6 +24,6 @@ User is uploading a photo.
 
 ### Example:
 
-```php
+```
 $sendMessageUploadPhotoAction = ['_' => 'sendMessageUploadPhotoAction', 'progress' => int];
 ```  

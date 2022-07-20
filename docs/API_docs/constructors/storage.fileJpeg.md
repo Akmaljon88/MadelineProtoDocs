@@ -20,6 +20,6 @@ JPEG image. MIME type: `image/jpeg`.
 
 ### Example:
 
-```php
+```
 $storage_fileJpeg = ['_' => 'storage.fileJpeg'];
 ```  

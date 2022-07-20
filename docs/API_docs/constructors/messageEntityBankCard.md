@@ -25,6 +25,6 @@ Indicates a credit card number
 
 ### Example:
 
-```php
+```
 $messageEntityBankCard = ['_' => 'messageEntityBankCard', 'offset' => int, 'length' => int];
 ```  

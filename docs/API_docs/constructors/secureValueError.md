@@ -26,6 +26,6 @@ Secure value error
 
 ### Example:
 
-```php
+```
 $secureValueError = ['_' => 'secureValueError', 'type' => SecureValueType, 'hash' => 'bytes', 'text' => 'string'];
 ```  

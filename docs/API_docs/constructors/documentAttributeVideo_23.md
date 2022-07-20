@@ -26,6 +26,6 @@ Defines a video
 
 ### Example:
 
-```php
+```
 $documentAttributeVideo_23 = ['_' => 'documentAttributeVideo', 'duration' => int, 'w' => int, 'h' => int];
 ```  

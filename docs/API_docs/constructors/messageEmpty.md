@@ -25,6 +25,6 @@ Empty constructor, non-existent message.
 
 ### Example:
 
-```php
+```
 $messageEmpty = ['_' => 'messageEmpty', 'id' => int, 'peer_id' => Peer];
 ```  

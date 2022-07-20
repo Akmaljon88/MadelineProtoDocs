@@ -19,6 +19,6 @@ Return only round videos
 
 ### Example:
 
-```php
+```
 $inputMessagesFilterRoundVideo = ['_' => 'inputMessagesFilterRoundVideo'];
 ```  

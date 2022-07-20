@@ -24,7 +24,7 @@ Powered by [amphp](https://amphp.org), MadelineProto wraps the AMPHP APIs to pro
       * [Async sleep](#async-sleep-does-not-block-the-main-thread)
       * [Async readline](#async-readline-does-not-block-the-main-thread)
       * [Async echo](#async-echo-does-not-block-the-main-thread)
-      * [MadelineProto artax HTTP client](#madelineproto-artax-http-client)
+      * [MadelineProto HTTP client](#madelineproto-http-client)
       * [Async forking](#async-forking-does-green-thread-forking)
       * [Async flock](#async-flock)
       * [Combining async operations](#combining-async-operations)
@@ -130,7 +130,7 @@ class EventHandler extends \danog\MadelineProto\EventHandler
     }
     public function sm($peer, $message)
     {
-        yield $this->messages->sendMessage(['peer' => $peer, 'message' => $message, 'reply_to_msg_id' => isset($update['message']['id']) ? $update['message']['id'] : null, 'parse_mode' => 'HTML']);
+        yield $this->messages->sendMessage(peer: $peer, message: $message, reply_to_msg_id: isset($update['message']['id']) ? $update['message']['id'] : null, parse_mode: 'HTML');
     }
 }
 ```
@@ -143,7 +143,7 @@ $MadelineProto->setCallback(function ($update) use ($MadelineProto) {
         return;
     }
     yield $MadelineProto->sleep(3);
-    yield $MadelineProto->messages->sendMessage(['peer' => $update, 'message' => 'Hi after 3 seconds']);
+    yield $MadelineProto->messages->sendMessage(peer: $update, message: 'Hi after 3 seconds');
 });
 ```
 
@@ -151,7 +151,7 @@ $MadelineProto->setCallback(function ($update) use ($MadelineProto) {
 ```php
 $MadelineProto->async(true);
 $MadelineProto->loop(function () use ($MadelineProto) {
-    yield $MadelineProto->messages->sendMessage(['peer' => '@danogentili', 'message' => 'hi']);
+    yield $MadelineProto->messages->sendMessage(peer: '...', message: 'hi');
     // You can also have an asynchronous get_updates (deprecated) loop in here, if you want to; just don't forget to use yield for all MadelineProto functions.
 });
 ```
@@ -275,22 +275,22 @@ $res = yield $MadelineProto->readLine('Optional prompt');
 yield $MadelineProto->echo('Hello'.PHP_EOL);
 ```
 
-#### MadelineProto artax HTTP client
+#### MadelineProto HTTP client
 
-When using amphp's [artax](https://amphp.org/artax) to make high-speed asynchronous HTTP requests (downloading files, etc.), use MadelineProto's modified Artax client, instead.  
+When using amphp's [http-client](https://amphp.org/http-client) to make high-speed asynchronous HTTP requests (downloading files, etc.), use MadelineProto's modified http-client client, instead.  
 It automatically supports the socks/HTTP proxies specified in MadelineProto's settings (will use proxies only if the file can't be downloaded normally), and soon DoH for greater security.  
 
-To use MadelineProto's artax client, instead of creating artax's default client:  
+To use MadelineProto's http-client client, instead of creating an http-client instance:  
 ```php
-$client = new Amp\Artax\DefaultClient;
+$client = \Amp\Http\Client\HttpClientBuilder::buildDefault();
 ```
 
-Simply get MadelineProto's artax client:  
+Simply get MadelineProto's HTTP client:  
 ```php
 $client = $MadelineProto->getHTTPClient();
 ```
 
-From here it's like in the [artax docs](https://amphp.org/artax).  
+From here it's like in the [http-client docs](https://amphp.org/http-client).  
 
 MadelineProto also provides a simplified async version of `file_get_contents`:  
 ```php
@@ -562,10 +562,8 @@ class MySuperLoop extends ResumableSignalLoop
             $t = time() - $t;
             
             $result = yield $MadelineProto->messages->sendMessage(
-                [
-                    'peer'    => '...',
-                    'message' => "Resumed after $t seconds of timeout"
-                ]
+                peer:    '...',
+                message: "Resumed after $t seconds of timeout"
             );
         }
     }
@@ -606,7 +604,7 @@ use danog\Loop\Generic\GenericLoop;
 $loop = new GenericLoop(
     $MadelineProto,
     function () {
-        yield $this->API->messages->sendMessage(['peer' => '...', 'message' => 'Hi every 2 seconds']);
+        yield $this->API->messages->sendMessage(peer: '...', message: 'Hi every 2 seconds');
 
         return 2;
     },
@@ -646,7 +644,7 @@ use danog\Loop\Generic\PeriodicLoop;
 $loop = new PeriodicLoop(
     $MadelineProto,
     function () use (&$loop) {
-        yield $this->API->messages->sendMessage(['peer' => '...', 'message' => 'Hi every 2 seconds']);
+        yield $this->API->messages->sendMessage(peer: '...', message: 'Hi every 2 seconds');
     },
     "My super loop",
     2

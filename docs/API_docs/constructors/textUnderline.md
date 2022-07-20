@@ -24,6 +24,6 @@ Underlined text
 
 ### Example:
 
-```php
+```
 $textUnderline = ['_' => 'textUnderline', 'text' => RichText];
 ```  

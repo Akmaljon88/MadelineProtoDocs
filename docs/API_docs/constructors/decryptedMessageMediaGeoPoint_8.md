@@ -25,6 +25,6 @@ GeoPoint attached to an encrypted message.
 
 ### Example:
 
-```php
+```
 $decryptedMessageMediaGeoPoint_8 = ['_' => 'decryptedMessageMediaGeoPoint', 'lat' => double, 'long' => double];
 ```  

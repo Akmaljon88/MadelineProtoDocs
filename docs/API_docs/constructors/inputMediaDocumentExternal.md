@@ -25,6 +25,6 @@ Document that will be downloaded by the telegram servers
 
 ### Example:
 
-```php
+```
 $inputMediaDocumentExternal = ['_' => 'inputMediaDocumentExternal', 'url' => 'string', 'ttl_seconds' => int];
 ```  

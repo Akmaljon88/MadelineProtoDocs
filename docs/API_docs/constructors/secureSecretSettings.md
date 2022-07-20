@@ -26,6 +26,6 @@ Secure settings
 
 ### Example:
 
-```php
+```
 $secureSecretSettings = ['_' => 'secureSecretSettings', 'secure_algo' => SecurePasswordKdfAlgo, 'secure_secret' => 'bytes', 'secure_secret_id' => long];
 ```  

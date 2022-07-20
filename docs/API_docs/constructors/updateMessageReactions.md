@@ -26,6 +26,6 @@ New [message reactions »](https://core.telegram.org/api/reactions) are availabl
 
 ### Example:
 
-```php
+```
 $updateMessageReactions = ['_' => 'updateMessageReactions', 'peer' => Peer, 'msg_id' => int, 'reactions' => MessageReactions];
 ```  

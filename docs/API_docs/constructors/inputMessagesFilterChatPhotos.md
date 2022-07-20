@@ -19,6 +19,6 @@ Return only chat photo changes
 
 ### Example:
 
-```php
+```
 $inputMessagesFilterChatPhotos = ['_' => 'inputMessagesFilterChatPhotos'];
 ```  

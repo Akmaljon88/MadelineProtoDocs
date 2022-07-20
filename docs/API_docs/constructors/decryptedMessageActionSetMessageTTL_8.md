@@ -26,6 +26,6 @@ Upon receiving such message the client shall start deleting of all messages of a
 
 ### Example:
 
-```php
+```
 $decryptedMessageActionSetMessageTTL_8 = ['_' => 'decryptedMessageActionSetMessageTTL', 'ttl_seconds' => int];
 ```  

@@ -19,6 +19,6 @@ Empty constructor, remove group photo.
 
 ### Example:
 
-```php
+```
 $inputChatPhotoEmpty = ['_' => 'inputChatPhotoEmpty'];
 ```  

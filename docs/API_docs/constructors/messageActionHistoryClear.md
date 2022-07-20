@@ -19,6 +19,6 @@ Chat history was cleared
 
 ### Example:
 
-```php
+```
 $messageActionHistoryClear = ['_' => 'messageActionHistoryClear'];
 ```  

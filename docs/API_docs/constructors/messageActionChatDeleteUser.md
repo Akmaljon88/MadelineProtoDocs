@@ -24,6 +24,6 @@ User left the group.
 
 ### Example:
 
-```php
+```
 $messageActionChatDeleteUser = ['_' => 'messageActionChatDeleteUser', 'user_id' => long];
 ```  

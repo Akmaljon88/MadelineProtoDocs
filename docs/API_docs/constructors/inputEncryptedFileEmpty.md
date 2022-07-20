@@ -19,6 +19,6 @@ Empty constructor.
 
 ### Example:
 
-```php
+```
 $inputEncryptedFileEmpty = ['_' => 'inputEncryptedFileEmpty'];
 ```  

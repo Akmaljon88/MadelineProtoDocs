@@ -26,6 +26,6 @@ Represents an audio file
 
 ### Example:
 
-```php
+```
 $documentAttributeAudio_46 = ['_' => 'documentAttributeAudio', 'duration' => int, 'title' => 'string', 'performer' => 'string'];
 ```  

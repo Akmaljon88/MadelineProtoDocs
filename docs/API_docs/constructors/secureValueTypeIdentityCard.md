@@ -19,6 +19,6 @@ Identity card
 
 ### Example:
 
-```php
+```
 $secureValueTypeIdentityCard = ['_' => 'secureValueTypeIdentityCard'];
 ```  

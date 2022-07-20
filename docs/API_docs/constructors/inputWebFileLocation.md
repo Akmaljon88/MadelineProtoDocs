@@ -25,6 +25,6 @@ Location of a remote HTTP(s) file
 
 ### Example:
 
-```php
+```
 $inputWebFileLocation = ['_' => 'inputWebFileLocation', 'url' => 'string', 'access_hash' => long];
 ```  

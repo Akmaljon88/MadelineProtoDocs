@@ -19,6 +19,6 @@ A user was accepted into the group by an admin
 
 ### Example:
 
-```php
+```
 $messageActionChatJoinedByRequest = ['_' => 'messageActionChatJoinedByRequest'];
 ```  

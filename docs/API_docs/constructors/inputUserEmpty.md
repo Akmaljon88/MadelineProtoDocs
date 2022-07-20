@@ -19,6 +19,6 @@ Empty constructor, does not define a user.
 
 ### Example:
 
-```php
+```
 $inputUserEmpty = ['_' => 'inputUserEmpty'];
 ```  

@@ -19,6 +19,6 @@ User is choosing a sticker
 
 ### Example:
 
-```php
+```
 $sendMessageChooseStickerAction = ['_' => 'sendMessageChooseStickerAction'];
 ```  

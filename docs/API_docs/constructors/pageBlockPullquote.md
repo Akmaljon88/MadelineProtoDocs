@@ -25,6 +25,6 @@ Pullquote
 
 ### Example:
 
-```php
+```
 $pageBlockPullquote = ['_' => 'pageBlockPullquote', 'text' => RichText, 'caption' => RichText];
 ```  

@@ -26,6 +26,6 @@ How a user voted in a poll
 
 ### Example:
 
-```php
+```
 $messageUserVote = ['_' => 'messageUserVote', 'user_id' => long, 'option' => 'bytes', 'date' => int];
 ```  

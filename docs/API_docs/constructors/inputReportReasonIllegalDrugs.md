@@ -19,6 +19,6 @@ Report for illegal drugs
 
 ### Example:
 
-```php
+```
 $inputReportReasonIllegalDrugs = ['_' => 'inputReportReasonIllegalDrugs'];
 ```  

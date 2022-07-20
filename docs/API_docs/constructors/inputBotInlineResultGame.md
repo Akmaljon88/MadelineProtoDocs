@@ -26,6 +26,6 @@ Game
 
 ### Example:
 
-```php
+```
 $inputBotInlineResultGame = ['_' => 'inputBotInlineResultGame', 'id' => 'string', 'short_name' => 'string', 'send_message' => InputBotInlineMessage];
 ```  

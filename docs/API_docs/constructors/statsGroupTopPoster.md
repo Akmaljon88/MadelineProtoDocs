@@ -26,6 +26,6 @@ Information about an active user in a supergroup
 
 ### Example:
 
-```php
+```
 $statsGroupTopPoster = ['_' => 'statsGroupTopPoster', 'user_id' => long, 'messages' => int, 'avg_chars' => int];
 ```  

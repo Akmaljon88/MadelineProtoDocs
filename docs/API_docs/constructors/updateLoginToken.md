@@ -19,6 +19,6 @@ A login token (for login via QR code) was accepted.
 
 ### Example:
 
-```php
+```
 $updateLoginToken = ['_' => 'updateLoginToken'];
 ```  

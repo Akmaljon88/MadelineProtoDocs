@@ -24,6 +24,6 @@ Allow only certain users
 
 ### Example:
 
-```php
+```
 $privacyValueAllowUsers = ['_' => 'privacyValueAllowUsers', 'users' => [long, long]];
 ```  

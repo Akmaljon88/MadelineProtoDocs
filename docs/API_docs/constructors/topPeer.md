@@ -25,6 +25,6 @@ Top peer
 
 ### Example:
 
-```php
+```
 $topPeer = ['_' => 'topPeer', 'peer' => Peer, 'rating' => double];
 ```  

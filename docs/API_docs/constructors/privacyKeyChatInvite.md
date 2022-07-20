@@ -19,6 +19,6 @@ Whether the user can be invited to chats
 
 ### Example:
 
-```php
+```
 $privacyKeyChatInvite = ['_' => 'privacyKeyChatInvite'];
 ```  

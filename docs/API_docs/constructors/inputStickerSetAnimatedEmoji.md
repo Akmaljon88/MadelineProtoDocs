@@ -19,6 +19,6 @@ Animated emojis stickerset
 
 ### Example:
 
-```php
+```
 $inputStickerSetAnimatedEmoji = ['_' => 'inputStickerSetAnimatedEmoji'];
 ```  

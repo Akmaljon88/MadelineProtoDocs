@@ -25,6 +25,6 @@ Error.
 
 ### Example:
 
-```php
+```
 $error = ['_' => 'error', 'code' => int, 'text' => 'string'];
 ```  

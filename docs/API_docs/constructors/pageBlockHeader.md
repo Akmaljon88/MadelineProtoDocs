@@ -24,6 +24,6 @@ Page header
 
 ### Example:
 
-```php
+```
 $pageBlockHeader = ['_' => 'pageBlockHeader', 'text' => RichText];
 ```  

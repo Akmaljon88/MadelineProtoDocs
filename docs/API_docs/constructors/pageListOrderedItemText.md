@@ -25,6 +25,6 @@ Ordered list of text items
 
 ### Example:
 
-```php
+```
 $pageListOrderedItemText = ['_' => 'pageListOrderedItemText', 'num' => 'string', 'text' => RichText];
 ```  

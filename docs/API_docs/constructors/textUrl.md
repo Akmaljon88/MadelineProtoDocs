@@ -26,6 +26,6 @@ Link
 
 ### Example:
 
-```php
+```
 $textUrl = ['_' => 'textUrl', 'text' => RichText, 'url' => 'string', 'webpage_id' => long];
 ```  

@@ -19,6 +19,6 @@ User is selecting a location to share.
 
 ### Example:
 
-```php
+```
 $sendMessageGeoLocationAction = ['_' => 'sendMessageGeoLocationAction'];
 ```  

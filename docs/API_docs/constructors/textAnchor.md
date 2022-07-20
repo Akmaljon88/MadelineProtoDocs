@@ -25,6 +25,6 @@ Text linking to another section of the page
 
 ### Example:
 
-```php
+```
 $textAnchor = ['_' => 'textAnchor', 'text' => RichText, 'name' => 'string'];
 ```  

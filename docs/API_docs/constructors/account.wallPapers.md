@@ -26,6 +26,6 @@ Installed wallpapers
 
 ### Example:
 
-```php
+```
 $account_wallPapers = ['_' => 'account.wallPapers', 'hash' => long, 'wallpapers' => [WallPaper, WallPaper]];
 ```  

@@ -24,6 +24,6 @@ Abort rekeying
 
 ### Example:
 
-```php
+```
 $decryptedMessageActionAbortKey_20 = ['_' => 'decryptedMessageActionAbortKey', 'exchange_id' => long];
 ```  

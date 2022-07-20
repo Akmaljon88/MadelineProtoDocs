@@ -19,6 +19,6 @@ Unsupported IV element
 
 ### Example:
 
-```php
+```
 $pageBlockUnsupported = ['_' => 'pageBlockUnsupported'];
 ```  

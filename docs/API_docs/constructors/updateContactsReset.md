@@ -19,6 +19,6 @@ All contacts were deleted
 
 ### Example:
 
-```php
+```
 $updateContactsReset = ['_' => 'updateContactsReset'];
 ```  

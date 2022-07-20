@@ -24,6 +24,6 @@ List item
 
 ### Example:
 
-```php
+```
 $pageListItemBlocks = ['_' => 'pageListItemBlocks', 'blocks' => [PageBlock, PageBlock]];
 ```  

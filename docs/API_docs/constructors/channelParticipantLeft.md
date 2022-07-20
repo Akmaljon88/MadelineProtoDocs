@@ -24,6 +24,6 @@ A participant that left the channel/supergroup
 
 ### Example:
 
-```php
+```
 $channelParticipantLeft = ['_' => 'channelParticipantLeft', 'peer' => Peer];
 ```  

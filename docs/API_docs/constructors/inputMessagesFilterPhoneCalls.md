@@ -24,6 +24,6 @@ Return only phone calls
 
 ### Example:
 
-```php
+```
 $inputMessagesFilterPhoneCalls = ['_' => 'inputMessagesFilterPhoneCalls', 'missed' => Bool];
 ```  

@@ -19,6 +19,6 @@ Most used bots
 
 ### Example:
 
-```php
+```
 $topPeerCategoryBotsPM = ['_' => 'topPeerCategoryBotsPM'];
 ```  

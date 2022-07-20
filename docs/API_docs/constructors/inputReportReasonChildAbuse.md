@@ -19,6 +19,6 @@ Report for child abuse
 
 ### Example:
 
-```php
+```
 $inputReportReasonChildAbuse = ['_' => 'inputReportReasonChildAbuse'];
 ```  

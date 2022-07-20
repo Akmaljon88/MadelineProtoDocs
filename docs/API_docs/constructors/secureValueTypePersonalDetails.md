@@ -19,6 +19,6 @@ Personal details
 
 ### Example:
 
-```php
+```
 $secureValueTypePersonalDetails = ['_' => 'secureValueTypePersonalDetails'];
 ```  

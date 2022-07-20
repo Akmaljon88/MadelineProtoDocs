@@ -25,6 +25,6 @@ URL button
 
 ### Example:
 
-```php
+```
 $keyboardButtonUrl = ['_' => 'keyboardButtonUrl', 'text' => 'string', 'url' => 'string'];
 ```  

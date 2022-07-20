@@ -24,6 +24,6 @@ JSON numeric value
 
 ### Example:
 
-```php
+```
 $jsonNumber = ['_' => 'jsonNumber', 'value' => double];
 ```  

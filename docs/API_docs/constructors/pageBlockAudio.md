@@ -25,6 +25,6 @@ Audio
 
 ### Example:
 
-```php
+```
 $pageBlockAudio = ['_' => 'pageBlockAudio', 'audio_id' => long, 'caption' => PageCaption];
 ```  

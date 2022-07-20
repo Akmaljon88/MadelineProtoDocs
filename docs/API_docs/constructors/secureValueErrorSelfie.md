@@ -26,6 +26,6 @@ Represents an issue with the selfie with a document. The error is considered res
 
 ### Example:
 
-```php
+```
 $secureValueErrorSelfie = ['_' => 'secureValueErrorSelfie', 'type' => SecureValueType, 'file_hash' => 'bytes', 'text' => 'string'];
 ```  
